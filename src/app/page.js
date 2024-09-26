@@ -1,10 +1,33 @@
 import Image from "next/image";
 import Logo from "./public/images/logoat.png"
+import ImportantNote from "./components/notes/importantNotes"
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <div className="grid grid-rows-1 items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:px-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+        <h1 className="text-slate-700 font-bold">Importantes</h1>
+        <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-8 border-t border-gray-200 pt-10 sm:pt-6 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+          <ImportantNote />
+          <ImportantNote />
+          <ImportantNote />
+          
+          <ImportantNote />
+          <ImportantNote />
+          <ImportantNote />
+        </div>
+        <h1 className="text-slate-700 font-bold">Basicas</h1>
+        <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-8 border-t border-gray-200 pt-10 sm:pt-6 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+          <ImportantNote />
+          <ImportantNote />
+          <ImportantNote />
+        </div>
+        <h1 className="text-slate-700 font-bold">Concluídas</h1>
+        <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-8 border-t border-gray-200 pt-10 sm:pt-6 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+          <ImportantNote />
+          <ImportantNote />
+          <ImportantNote />
+        </div>
         <Image
           className="dark:invert"
           src={Logo}
